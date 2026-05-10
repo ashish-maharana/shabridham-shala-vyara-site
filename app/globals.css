@@ -28,7 +28,7 @@ h1,h2,h3,h4 { font-family: var(--font-heading); letter-spacing: -0.055em; color:
 .section-gap { margin-top: clamp(2rem, 4vw, 4rem); }
 
 .nav-learnify { position: relative; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.15rem clamp(1.2rem, 3vw, 2rem); }
-.logo-text { font-weight: 900; color: var(--coral); letter-spacing: -.03em; }
+.logo-text { font-size: clamp(1.2rem, 2.1vw, 1.55rem); font-weight: 900; color: var(--coral); letter-spacing: -.03em; }
 .nav-link { font-size: .86rem; font-weight: 800; color: var(--ink); }
 .btn-primary,.btn-secondary,.chip { display: inline-flex; align-items: center; justify-content: center; border-radius: 11px; font-size: .86rem; font-weight: 900; transition: transform .2s ease, box-shadow .2s ease; }
 .btn-primary { background: var(--coral); color: white; padding: .82rem 1.2rem; box-shadow: 0 10px 0 rgba(17,17,17,.08); }

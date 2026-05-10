@@ -1,5 +1,5 @@
 ﻿export const placeholderAssets = {
-  logo: "/images/common/shabridham-badge.svg",
+  logo: "/images/common/shabridham-logo.jpg",
   hero: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
   illustrationA: "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1000&q=80",
   classroom: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80",

@@ -14,7 +14,13 @@ export function Navbar() {
   return (
     <header className="nav-learnify">
       <Link href="/" className="flex items-center gap-2">
-        <Image src={placeholderAssets.logo} alt="Shabridham placeholder logo" width={34} height={34} className="rounded-xl" />
+        <Image
+          src={placeholderAssets.logo}
+          alt="Shabridham placeholder logo"
+          width={50}
+          height={50}
+          className="rounded-full object-cover"
+        />
         <span className="logo-text">{site.shortName}</span>
       </Link>
       <nav className="nav-center flex items-center gap-8">
