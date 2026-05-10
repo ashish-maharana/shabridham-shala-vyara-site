@@ -1,0 +1,8 @@
+﻿<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="220" rx="44" fill="#F9F9F5"/>
+  <rect x="18" y="18" width="184" height="184" rx="34" stroke="#111111" stroke-width="6"/>
+  <circle cx="74" cy="80" r="28" fill="#FFD044" stroke="#111111" stroke-width="5"/>
+  <rect x="104" y="53" width="58" height="58" rx="18" fill="#B783EA" stroke="#111111" stroke-width="5"/>
+  <path d="M55 145C75 125 98 122 119 138C137 151 151 151 168 132" stroke="#FF563D" stroke-width="10" stroke-linecap="round"/>
+  <text x="110" y="178" text-anchor="middle" font-family="Trebuchet MS, Arial" font-size="24" font-weight="900" fill="#111111">SHALA</text>
+</svg>

@@ -1,0 +1,56 @@
+﻿@import "tailwindcss";
+
+:root {
+  --lavender: #bdaed4;
+  --panel: #f9f9f5;
+  --ink: #111111;
+  --muted: #4e4b50;
+  --coral: #ff563d;
+  --coral-dark: #e44731;
+  --yellow: #ffd044;
+  --purple: #b783ea;
+  --line: #181818;
+  --soft: #efefea;
+  --font-heading: "Trebuchet MS", "Arial Rounded MT Bold", "Segoe UI", sans-serif;
+  --font-body: "Segoe UI", "Nunito", "Trebuchet MS", sans-serif;
+}
+
+@theme inline { --font-sans: var(--font-body); }
+* { box-sizing: border-box; scroll-behavior: smooth; }
+html { scroll-padding-top: 110px; }
+body { margin: 0; color: var(--ink); background: var(--lavender); font-family: var(--font-body); }
+h1,h2,h3,h4 { font-family: var(--font-heading); letter-spacing: -0.055em; color: var(--ink); }
+
+.learnify-shell { width: min(100%, 1500px); margin: 0 auto; padding: clamp(1rem, 3vw, 2.2rem); }
+.panel { position: relative; overflow: hidden; border-radius: 34px; background: var(--panel); border: 1.5px solid rgba(17,17,17,.08); box-shadow: 0 24px 70px rgba(55,38,75,.14); }
+.panel::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 24% 62%, transparent 0 90px, rgba(17,17,17,.035) 92px 96px, transparent 98px), radial-gradient(circle at 74% 38%, transparent 0 120px, rgba(17,17,17,.03) 122px 126px, transparent 128px); pointer-events: none; }
+.section-pad { padding: clamp(2rem, 5vw, 5rem); }
+.section-gap { margin-top: clamp(2rem, 4vw, 4rem); }
+
+.nav-learnify { position: relative; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.15rem clamp(1.2rem, 3vw, 2rem); }
+.logo-text { font-weight: 900; color: var(--coral); letter-spacing: -.03em; }
+.nav-link { font-size: .86rem; font-weight: 800; color: var(--ink); }
+.btn-primary,.btn-secondary,.chip { display: inline-flex; align-items: center; justify-content: center; border-radius: 11px; font-size: .86rem; font-weight: 900; transition: transform .2s ease, box-shadow .2s ease; }
+.btn-primary { background: var(--coral); color: white; padding: .82rem 1.2rem; box-shadow: 0 10px 0 rgba(17,17,17,.08); }
+.btn-secondary { color: var(--coral); padding: .82rem 1rem; }
+.btn-dark { background: var(--ink); color: white; }
+.btn-primary:hover,.btn-secondary:hover,.chip:hover { transform: translateY(-2px); }
+.chip { border: 1.7px solid var(--line); background: white; padding: .72rem 1.1rem; }
+.chip-active { background: var(--ink); color: white; }
+.sticker { border: 1.8px solid var(--line); border-radius: 18px; background: white; padding: 1rem; transform: rotate(-2deg); box-shadow: 0 8px 0 rgba(17,17,17,.08); }
+.title-xl { font-size: clamp(3.1rem, 7vw, 7.8rem); line-height: .93; font-weight: 950; }
+.title-lg { font-size: clamp(2.6rem, 5vw, 5.6rem); line-height: .93; font-weight: 950; }
+.highlight { color: var(--coral); }
+.body-copy { color: var(--muted); font-weight: 650; line-height: 1.65; }
+.hero-grid { position: relative; z-index: 1; display: grid; gap: 2rem; grid-template-columns: minmax(0, .95fr) minmax(320px, 1.05fr); align-items: center; }
+.illo-card { border: 2px solid var(--line); border-radius: 24px; overflow: hidden; background: white; }
+.course-card { border: 2px solid var(--line); border-radius: 24px; overflow: hidden; background: white; padding: .55rem; box-shadow: 0 8px 0 rgba(17,17,17,.08); }
+.course-img { border-radius: 18px; min-height: 210px; display: grid; place-items: center; border: 1.7px solid var(--line); }
+.badge { display: inline-flex; width: fit-content; border: 1.5px solid var(--line); border-radius: 999px; padding: .28rem .62rem; font-size: .72rem; font-weight: 900; background: var(--yellow); }
+.footer-panel { background: var(--panel); border-radius: 34px; padding: clamp(2rem, 4vw, 4rem); border: 1.5px solid rgba(17,17,17,.08); }
+.faq-item { border: 1.7px solid var(--line); background: white; border-radius: 16px; overflow: hidden; }
+.faq-item summary { cursor: pointer; padding: 1rem 1.2rem; font-weight: 900; }
+.faq-item p { padding: 0 1.2rem 1.1rem; color: var(--muted); font-weight: 650; line-height: 1.6; }
+input,textarea { font: inherit; }
+@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .nav-center { display: none; } }
+@media (max-width: 640px) { .panel { border-radius: 24px; } .title-xl { font-size: 3.6rem; } }
