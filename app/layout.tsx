@@ -6,8 +6,8 @@ import { RouteScrollReset } from "@/components/route-scroll-reset";
 import { ScrollProgress } from "@/components/scroll-progress";
 
 export const metadata: Metadata = {
-  title: "Shabridham Shala | વ્યારા",
-  description: "શબરીધામ શાળા, વ્યારા (તાપી, ગુજરાત) માટે લર્નિફાય-શૈલીનો શાળા વેબસાઇટ કૉન્સેપ્ટ.",
+  title: "શબરીધામ શાળા સંકુલ | વ્યારા",
+  description: "શબરીધામ શાળા સંકુલ, વ્યારા (તાપી, ગુજરાત) માટે લર્નિફાય-શૈલીનો શાળા વેબસાઇટ કૉન્સેપ્ટ.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

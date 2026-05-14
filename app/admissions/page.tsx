@@ -4,8 +4,8 @@ import { placeholderAssets } from "@/data/placeholders";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Admissions | Shabridham Shala",
-  description: "શબરીધામ શાળા માટે Admissions પૂછપરછ અને પ્રક્રિયા માર્ગદર્શન.",
+  title: "એડમિશન | શબરીધામ શાળા સંકુલ",
+  description: "શબરીધામ શાળા માટે એડમિશન પૂછપરછ અને પ્રક્રિયા માર્ગદર્શન.",
   path: "/admissions",
 });
 
@@ -20,7 +20,7 @@ const docs = [
 
 export default function AdmissionsPage() {
   const faqs: Array<[string, string]> = [
-    ["શું Admissions ખુલ્લાં છે?", "હાલની ક્લાસ ઉપલબ્ધતા માટે શાળાનો સંપર્ક કરીને પુષ્ટિ કરો."],
+    ["શું એડમિશન ખુલ્લાં છે?", "હાલની ક્લાસ ઉપલબ્ધતા માટે શાળાનો સંપર્ક કરીને પુષ્ટિ કરો."],
     ["કયો બોર્ડ/કયા ધોરણો ઉપલબ્ધ છે?", "અધિકૃત વિગતો પુષ્ટિ થાય ત્યાં સુધી લખાણ સંપાદિત રાખો."],
     ["શું આ ગુજરાતી-માધ્યમ છે?", "હાલનો જાહેર આધાર ગુજરાતી-માધ્યમ શાળા-સલામત સ્થિતિ દર્શાવે છે."],
     ["શું સંપર્ક માહિતી અધિકૃત છે?", "ફોન અને ઇમેઇલ અધિકૃત પુષ્ટિ થાય ત્યાં સુધી પ્લેસહોલ્ડર છે."],
@@ -31,11 +31,11 @@ export default function AdmissionsPage() {
       <PageHero
         variant="shabridham-ref"
         content={{
-          eyebrow: "Admissions",
-          title: "યોગ્ય Admissions માર્ગ શોધો",
-          description: "પેરેન્ટ વિનંતી, ક્લાસ ઉપલબ્ધતા, દસ્તાવેજો અને મુલાકાત માર્ગદર્શન માટે સરળ અને મિત્રસભર Admissions પૃષ્ઠ.",
+          eyebrow: "એડમિશન",
+          title: "યોગ્ય એડમિશન માર્ગ શોધો",
+          description: "પેરેન્ટ વિનંતી, ક્લાસ ઉપલબ્ધતા, દસ્તાવેજો અને મુલાકાત માર્ગદર્શન માટે સરળ અને મિત્રસભર એડમિશન પૃષ્ઠ.",
           imageSrc: placeholderAssets.illustrationA,
-          imageAlt: "પ્લેસહોલ્ડર: Admissions",
+          imageAlt: "પ્લેસહોલ્ડર: એડમિશન",
           primaryCta: { label: "વિનંતી શરૂ કરો", href: "/contact" },
           secondaryCta: { label: "અભ્યાસક્રમ", href: "/academics" },
         }}

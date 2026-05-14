@@ -1,7 +1,7 @@
 ﻿# Shabridham Shala Website
 
 Static Next.js (App Router) + Tailwind CSS website for:
-- Shabridham Shala
+- શબરીધામ શાળા સંકુલ
 - Vyara, Tapi, Gujarat, India
 
 ## Stack
