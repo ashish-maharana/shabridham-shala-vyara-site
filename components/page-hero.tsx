@@ -16,7 +16,20 @@ export function PageHero({ content, variant = "default" }: { content: HeroConten
             <h1 className="title-xl">{first} <span className="highlight">{rest.slice(0,1).join(" ")}</span> {rest.slice(1).join(" ")}</h1>
             <p className="body-copy mt-6 max-w-xl">{content.description}</p>
             <div className="mt-8 flex flex-wrap gap-4"><Link href={content.primaryCta.href} className="btn-primary">{content.primaryCta.label}</Link>{content.secondaryCta ? <Link href={content.secondaryCta.href} className="btn-secondary">{content.secondaryCta.label} ↗</Link> : null}</div>
-            <div className="mt-16 grid max-w-xl grid-cols-3 gap-3"><div className="sticker"><span className="badge">ગુજરાતી</span><p className="mt-3 text-3xl font-black">માધ્યમ</p></div><div className="sticker bg-[var(--purple)]"><span className="badge">વ્યારા</span><p className="mt-3 text-3xl font-black">394650</p></div><div className="sticker bg-[var(--yellow)]"><span className="badge">શીખણ</span><p className="mt-3 text-3xl font-black">સહ-શિક્ષણ</p></div></div>
+            <div className="mt-16 grid max-w-xl grid-cols-2 gap-3 sm:grid-cols-3">
+              <div className="sticker">
+                <span className="badge">ગુજરાતી</span>
+                <p className="mt-3 text-2xl font-black sm:text-3xl">માધ્યમ</p>
+              </div>
+              <div className="sticker bg-[var(--purple)]">
+                <span className="badge">વ્યારા</span>
+                <p className="mt-3 text-2xl font-black tabular-nums tracking-tight sm:text-3xl">394650</p>
+              </div>
+              <div className="sticker col-span-2 w-full max-w-[calc((100%-0.75rem)/2)] justify-self-center sm:col-span-1 sm:max-w-none sm:justify-self-auto bg-[var(--yellow)]">
+                <span className="badge">શીખણ</span>
+                <p className="mt-3 text-2xl font-black sm:text-3xl">સહ-શિક્ષણ</p>
+              </div>
+            </div>
           </div>
           <div className="relative"><div className="absolute right-4 top-0 z-10 rounded-full border-2 border-black bg-[var(--yellow)] px-5 py-4 text-xl font-black">135+</div><div className="illo-card rotate-2"><Image src={content.imageSrc ?? ""} alt={content.imageAlt ?? content.title} width={860} height={620} priority className="aspect-[4/3] w-full object-cover" /></div></div>
         </div>
