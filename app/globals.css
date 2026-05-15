@@ -38,13 +38,13 @@ h1,h2,h3,h4 { font-family: var(--font-heading); letter-spacing: -0.055em; color:
 .chip { border: 1.7px solid var(--line); background: white; padding: .72rem 1.1rem; }
 .chip-active { background: var(--ink); color: white; }
 .sticker { border: 1.8px solid var(--line); border-radius: 18px; background: white; padding: 1rem; transform: rotate(-2deg); box-shadow: 0 8px 0 rgba(17,17,17,.08); }
-.title-xl { font-size: clamp(3.1rem, 7vw, 7.8rem); line-height: .93; font-weight: 950; }
-.title-lg { font-size: clamp(2.6rem, 5vw, 5.6rem); line-height: .93; font-weight: 950; }
+.title-xl { font-size: clamp(3.1rem, 7vw, 7.8rem); line-height: 1.15; font-weight: 950; }
+.title-lg { font-size: clamp(2.6rem, 5vw, 5.6rem); line-height: 1.15; font-weight: 950; }
 .highlight { color: var(--coral); }
 .body-copy { color: var(--muted); font-weight: 650; line-height: 1.65; }
 .hero-grid { position: relative; z-index: 1; display: grid; gap: 2rem; grid-template-columns: minmax(0, .95fr) minmax(320px, 1.05fr); align-items: center; }
 .illo-card { border: 2px solid var(--line); border-radius: 24px; overflow: hidden; background: white; }
-.course-card { border: 2px solid var(--line); border-radius: 24px; overflow: hidden; background: white; padding: .55rem; box-shadow: 0 8px 0 rgba(17,17,17,.08); }
+.course-card { border: 2px solid var(--line); border-radius: 24px; overflow: hidden; background: white; padding: .55rem; box-shadow: 0 8px 0 rgba(111, 67, 67, 0.08); }
 .course-img { border-radius: 18px; min-height: 210px; display: grid; place-items: center; border: 1.7px solid var(--line); }
 .badge { display: inline-flex; width: fit-content; border: 1.5px solid var(--line); border-radius: 999px; padding: .28rem .62rem; font-size: .72rem; font-weight: 900; background: var(--yellow); }
 .footer-panel { background: var(--panel); border-radius: 34px; padding: clamp(2rem, 4vw, 4rem); border: 1.5px solid rgba(17,17,17,.08); }
